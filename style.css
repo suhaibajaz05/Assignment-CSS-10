@@ -1,0 +1,223 @@
+ * {
+     text-decoration: none;
+     font-family: "Roboto", sans-serif;
+     box-sizing: border-box;
+ }
+
+ body {
+     /* background-color: gray; */
+     margin: 0;
+ }
+
+ /* -----------------------------------TOP----------------------------------- */
+ .top {
+     background-color: white;
+     width: 100%;
+     height: 50px;
+     padding: 0 100px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-bottom: 1px solid lightgray;
+ }
+
+ .top .left a {
+     margin: 8px;
+     font-size: 12px;
+     color: lightgray;
+ }
+
+ .top .left a:hover {
+     color: orange;
+     transition: all 0.5s;
+ }
+
+ .top .right select {
+     width: 100px;
+     height: 30px;
+     text-align: center;
+     border: none;
+     border-radius: 5px;
+     outline: none;
+     cursor: pointer;
+     background-color: #efefef;
+ }
+
+ .top .right button {
+     width: 100px;
+     height: 30px;
+     text-align: center;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color: orange;
+     color: white;
+ }
+
+ .top .right button:hover {
+     background-color: white;
+     color: black;
+     border: 1px solid orange;
+     transition: all 0.5s;
+
+ }
+
+ /* -----------------------------------Menu----------------------------------- */
+ .menu {
+     height: 70px;
+     display: flex;
+     background-color: white;
+     /* border: 1px solid red; */
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 100px;
+     /* width: 100%; */
+     position: sticky;
+     top: 0;
+     left: 0;
+ }
+
+ .menu .nav li {
+     /* border: 1px solid; */
+     list-style: none;
+     display: inline-block;
+     margin: 0 15px;
+     font-size: 12px;
+     font-weight: 500;
+ }
+
+ .menu .nav li a {
+     color: black;
+ }
+
+ .menu .nav li a:hover {
+     color: orange;
+     transition: all 0.3s;
+ }
+
+ /* -----------------------------------Section: picture-----------------------------------  */
+
+ .picture {
+     background: url(Image/home-banner.webp) no-repeat center;
+     height: 700px;
+     display: flex;
+
+ }
+
+ .picture .Build-content {
+     /* border: 1px solid blue; */
+     text-align: center;
+     color: white;
+     margin: auto;
+ }
+
+ .picture .Build-content h3 {
+     color: white;
+     font-size: 50px;
+     font-weight: bold;
+
+     span {
+         color: black;
+         background-color: orange;
+         border-radius: 5px;
+     }
+ }
+
+ .picture .Build-content p {
+     width: 500px;
+     font-size: 14px;
+     line-height: 24px;
+ }
+
+ .picture .Build-content button {
+     background-color: #2a2a2a;
+     color: orange;
+     width: 170px;
+     height: 50px;
+     border: none;
+     border-radius: 5px;
+     font-weight: bold;
+     margin-top: 10px;
+ }
+
+ .picture .Build-content button:hover {
+     background-color: orange;
+     color: #2a2a2a;
+     transition: all 0.5s;
+ }
+
+ /* -----------------------------------Section Comman-----------------------------------  */
+
+ section {
+     text-align: center;
+ }
+
+ h2 {
+     font-size: 36px;
+     margin-top: 100px;
+     margin-bottom: 10px;
+ }
+
+ h4 {
+     font-size: 18px;
+ }
+
+ p {
+     font-size: 14px;
+ }
+
+ /* -----------------------------------Section services-----------------------------------  */
+
+ .services .mainbox {
+     display: flex;
+     justify-content: center;
+     margin: 50px 60px;
+ }
+
+ .services .mainbox .box {
+     width: 25%;
+     /* border: 1px solid; */
+     padding: 20px;
+     margin: 10px;
+ }
+
+ .services .mainbox .box:hover {
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     transition: all 0.5s;
+ }
+
+ /* -----------------------------------Section: projects-----------------------------------  */
+
+ .projects .mainbox {
+     /* border: 1px solid; */
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin: 50px 0;
+ }
+
+ .projects .mainbox .box {
+     /* border: 1px solid red;   */
+     width: 33.33%;
+     position: relative;
+ }
+
+ .projects .mainbox .box img {
+     width: 100%;
+ }
+
+ .projects .mainbox .box .hover {
+     width: 100%;
+     /* height: 100%; */
+     background-color: rgba(250, 183, 0, 0.85);
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     align-content: center;
+     opacity: 0;
+ }
+
+ .projects .mainbox .box .hover:hover {
+     opacity: 1;
+     transition: all 0.5s;
+ }
