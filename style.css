@@ -78,7 +78,7 @@
  }
 
  .menu .nav li {
-     /* border: 1px solid; */
+     /* border: 1px solid black; */
      list-style: none;
      display: inline-block;
      margin: 0 15px;
@@ -116,6 +116,7 @@
      color: white;
      font-size: 50px;
      font-weight: bold;
+     margin: 10px;
 
      span {
          color: black;
@@ -128,6 +129,7 @@
      width: 500px;
      font-size: 14px;
      line-height: 24px;
+     color: white;
  }
 
  .picture .Build-content button {
@@ -165,6 +167,7 @@
 
  p {
      font-size: 14px;
+     color: #777777;
  }
 
  /* -----------------------------------Section services-----------------------------------  */
@@ -177,7 +180,7 @@
 
  .services .mainbox .box {
      width: 25%;
-     /* border: 1px solid; */
+     /* border: 1px solid black; */
      padding: 20px;
      margin: 10px;
  }
@@ -190,7 +193,7 @@
  /* -----------------------------------Section: projects-----------------------------------  */
 
  .projects .mainbox {
-     /* border: 1px solid; */
+     /* border: 1px solid black; */
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
@@ -201,6 +204,9 @@
      /* border: 1px solid red;   */
      width: 33.33%;
      position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
  }
 
  .projects .mainbox .box img {
@@ -208,17 +214,124 @@
  }
 
  .projects .mainbox .box .hover {
-     width: 100%;
-     /* height: 100%; */
+     /* border: 1px solid green; */
+     width: 95%;
+     height: 95%;
      background-color: rgba(250, 183, 0, 0.85);
      position: absolute;
-     top: 0;
-     bottom: 0;
      align-content: center;
      opacity: 0;
+
  }
 
  .projects .mainbox .box .hover:hover {
+     width: 100%;
+     height: 100%;
      opacity: 1;
      transition: all 0.5s;
  }
+
+ /* -----------------------------------Section: members-----------------------------------  */
+
+ .members .mainbox {
+     /* border: 1px solid black; */
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin: 50px 0;
+ }
+
+ .members .mainbox .box {
+     /* border: 1px solid red; */
+     margin-left: 20px;
+     margin-right: 20px;
+
+ }
+
+ .members .mainbox .box .team-image {
+     /* border: 1px solid red; */
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .members .mainbox .box .hover {
+     /* border: 1px solid green; */
+     width: 95%;
+     height: 95%;
+     background-color: rgba(250, 183, 0, 0.85);
+     position: absolute;
+     align-content: center;
+     opacity: 0;
+     color: #777777;
+ }
+
+ .members .mainbox .box .hover:hover {
+     width: 100%;
+     height: 100%;
+     opacity: 1;
+     transition: all 0.5s;
+     color: black;
+ }
+
+ .members .mainbox .box .hover a {
+     color: #777777;
+     cursor: pointer;
+     margin: 10px;
+ }
+
+ .members .mainbox .box .hover a:hover {
+     color: black;
+     cursor: pointer;
+
+ }
+
+ .members .mainbox .box .team-name h4 {
+     margin-bottom: 5px;
+ }
+
+ .members .mainbox .box .team-name p {
+     margin-top: 5px;
+ }
+
+ /* -----------------------------------Section: counter_area-----------------------------------  */
+
+ .counter_area {
+     /* border: 1px solid black; */
+     height: 320px;
+     background-color: rgb(250, 183, 0);
+ }
+
+ .counter_area .counters {
+     height: 100%;
+     /* border: 1px solid red; */
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .counter_area .counters .counter_item {
+     /* border: 1px solid green; */
+     margin: 0 50px;
+     text-align: left;
+ }
+
+ .counter_area .counters .counter_item h2 {
+     font-size: 48px;
+     font-family: "Oswald", sans-serif;
+     font-weight: bold;
+     color: #222222;
+     margin: 0;
+ }
+
+ .counter_area .counters .counter_item p {
+     /* margin-bottom: 0px; */
+     color: #222222;
+     font-size: 14px;
+ }
+
+ /* -----------------------------------Section: features-----------------------------------  */
+
+ 
