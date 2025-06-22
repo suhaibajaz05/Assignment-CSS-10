@@ -73,6 +73,7 @@
      padding: 0 100px;
      /* width: 100%; */
      position: sticky;
+     z-index: 1;
      top: 0;
      left: 0;
  }
@@ -159,10 +160,12 @@
      font-size: 36px;
      margin-top: 100px;
      margin-bottom: 10px;
+     color: #222222;
  }
 
  h4 {
      font-size: 18px;
+     color: #222222;
  }
 
  p {
@@ -221,7 +224,10 @@
      position: absolute;
      align-content: center;
      opacity: 0;
+ }
 
+ .projects .mainbox .box .hover p {
+     color: #222222;
  }
 
  .projects .mainbox .box .hover:hover {
@@ -334,4 +340,45 @@
 
  /* -----------------------------------Section: features-----------------------------------  */
 
- 
+ .features .mainbox {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     margin: 50px 20px;
+     /* border: 1px solid red; */
+     
+ }
+
+ .features .mainbox .box {
+     width: 28%;
+     /* border: 1px solid black; */
+     border: 1px solid #eeeeee;
+     border-radius: 10px;
+     padding: 20px 40px;
+     margin: 10px;
+     text-align: left;
+ }
+
+ .features .mainbox .box span {
+     /* border: 1px solid black; */
+     font-size: 24px;
+     margin-right: 5px;
+     vertical-align: text-top;
+ }
+
+ .features .mainbox .box p {
+     /* border: 1px solid black; */
+     line-height: 24px;
+ }
+
+ .features .mainbox .box:hover {
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     transition: all 0.5s;
+ }
+
+  .features .mainbox .box:hover h4 {
+     color: orange;
+     transition: all 0.5s;
+ }
+
+ /* -----------------------------------Section: -----------------------------------  */
